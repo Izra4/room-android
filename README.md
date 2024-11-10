@@ -12,5 +12,5 @@ The app also leverages [ViewModel](https://developer.android.com/topic/libraries
 [Flow](https://developer.android.com/kotlin/flow),
 and [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/).
 
-Muhamad Izra Arya Wardana
+Muhamad Izra Arya Wardana <br>
 225150207111080
