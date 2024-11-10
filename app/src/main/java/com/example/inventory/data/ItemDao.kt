@@ -24,6 +24,14 @@ import androidx.room.Query
 import androidx.room.Update
 import kotlinx.coroutines.flow.Flow
 
+/**
+ * ItemDao adalah interface DAO untuk mengelola operasi database terkait entity Item.
+ * Fungsi insert(), update(), dan delete() menyediakan operasi CRUD pada tabel "items" secara asynchronous.
+ * Fungsi getItem() mengambil item berdasarkan ID, sedangkan getAllItems() mengambil semua item
+ * dan mengurutkannya berdasarkan nama secara ascending. Keduanya mengembalikan Flow untuk pemantauan data secara real-time.
+ */
+
+
 @Dao
 interface ItemDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)

@@ -22,6 +22,16 @@ import androidx.room.PrimaryKey
 /**
  * Entity data class represents a single row in the database.
  */
+
+/**
+ * Item adalah kelas data yang mewakili satu baris dalam tabel database.
+ * Kelas ini ditandai dengan anotasi @Entity, menunjukkan bahwa kelas ini
+ * merupakan entitas Room dengan nama tabel "items".
+ * Properti id adalah primary key yang akan di-generate otomatis / increment, sementara
+ * properti lainnya seperti name, price, dan quantity menyimpan data item.
+ */
+
+
 @Entity(tableName = "items")
 data class Item(
     @PrimaryKey(autoGenerate = true)

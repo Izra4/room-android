@@ -21,6 +21,18 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
+/*
+ * InventoryDatabase adalah kelas abstrak yang mewarisi Room,
+ * berfungsi sebagai database Room untuk aplikasi.
+ * Database ini memiliki satu entitas yaitu "Item" dan menyediakan
+ * fungsi abstrak itemDao() untuk akses data.
+ * Objek singleton "Instance" memastikan hanya ada satu instance database
+ * yang digunakan di seluruh aplikasi.
+ * Metode getDatabase() akan mengembalikan instance database, atau
+ * membuat instance baru secara sinkron jika belum ada.
+ */
+
+
 @Database(entities = [Item::class], version = 1, exportSchema = false)
 abstract class InventoryDatabase : RoomDatabase() {
 

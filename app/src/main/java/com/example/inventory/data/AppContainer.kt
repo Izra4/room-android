@@ -18,6 +18,15 @@ package com.example.inventory.data
 
 import android.content.Context
 
+/*
+ * AppContainer adalah interafce untuk Dependency Injection yang menyediakan
+ * instance dari ItemsRepository.
+ * AppDataContainer adalah implementasi AppContainer yang memberikan instance
+ * OfflineItemsRepository. Dalam AppDataContainer, itemsRepository diinisialisasi secara lazy
+ * menggunakan OfflineItemsRepository, yang mendapatkan itemDao dari InventoryDatabase.
+ */
+
+
 /**
  * App container for Dependency injection.
  */
